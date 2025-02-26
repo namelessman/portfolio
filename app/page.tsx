@@ -1,101 +1,171 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main className="py-8 px-8 lg:py-24 lg:px-64 lg:max-w-7xl mx-auto">
+      <section className="w-full mb-24">
+        <h1 className="mb-2 text-4xl font-bold">
+          Yo! This&apos;s namelessman.
+        </h1>
+        <p className="text-xl mb-8">
+          Code simplifies the world, liberates humanity — I create it.
+        </p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+        <p>
+          Hi, I’m namelessman, a passionate Software Developer with 7+ years of
+          experience building scalable and high-performance web and mobile
+          applications. I specialize in React, TypeScript and Node.js, creating
+          intuitive and efficient user experiences.
+        </p>
+      </section>
+      <section className="mb-24">
+        <h2 className="text-xl font-bold mb-8">Skills</h2>
+        <div className="grid md:grid-cols-2 md:gap-4">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>React Native</li>
+          </ul>
+          <ul>
+            <li>Node.js</li>
+            <li>GraphQL</li>
+            <li>Next.js</li>
+            <li>Git</li>
+            <li>CI/CD</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="mb-24">
+        <h2 className="text-xl font-bold mb-8">Projects</h2>
+        <ul>
+          <li className="mb-8">
+            <article>
+              <h3 className="text-lg font-bold mb-4">
+                ROC (Resource Operations and Control Platform)
+              </h3>
+              <p>
+                The{" "}
+                <span className="font-bold">
+                  ROC (Resource Operations and Control) Platform
+                </span>{" "}
+                is a cloud-based system designed for managing large-scale
+                resources such as{" "}
+                <span className="font-bold">
+                  servers, containers, databases, and domains
+                </span>
+                . Similar to AWS or Azure, it enables efficient{" "}
+                <span className="font-bold">
+                  monitoring, automation, and access control
+                </span>
+                , helping businesses optimize their cloud infrastructure. As a{" "}
+                <span className="font-bold">front-end developer</span>, I
+                contributed to the platform by building{" "}
+                <span className="font-bold">
+                  scalable and reusable UI components
+                </span>{" "}
+                with <span className="font-bold">React and TypeScript</span>,
+                improving both performance and maintainability. I also optimized{" "}
+                <span className="font-bold">CDN-based resource loading</span>,
+                reducing page load time by{" "}
+                <span className="font-bold">20%</span>, and enhanced the{" "}
+                <span className="font-bold">CI/CD pipeline</span>, streamlining
+                deployments across global teams. ROC plays a key role in{" "}
+                <span className="font-bold">enterprise cloud management</span>,
+                providing a more efficient and automated approach to resource
+                operations.
+              </p>
+            </article>
+          </li>
+          <li className="mb-8">
+            <article>
+              <h3 className="text-lg font-bold mb-4">
+                Invisible Ink Scanner App
+              </h3>
+              <p>
+                The <span className="font-bold">Invisible Ink Scanner App</span>{" "}
+                is a mobile application designed to detect and interpret
+                invisible ink markings using a{" "}
+                <span className="font-bold">Bluetooth-enabled scanner</span>.
+                Built with <span className="font-bold">React Native</span>, the
+                app provides a seamless experience on both{" "}
+                <span className="font-bold">iOS and Android</span>, allowing
+                users to scan and verify hidden security features in real-time.
+                By integrating directly with a{" "}
+                <span className="font-bold">custom Bluetooth scanner</span>, the
+                app ensures instant communication with a{" "}
+                <span className="font-bold">cloud-based system</span>, enabling
+                secure and accurate authentication. This was{" "}
+                <span className="font-bold">
+                  the first project I worked on in New Zealand
+                </span>
+                , marking my transition into an international development
+                environment. Developed for industries requiring{" "}
+                <span className="font-bold">anti-counterfeiting measures</span>,
+                it enhances product security by offering a fast, reliable, and
+                user-friendly solution for verifying authenticity.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3 className="text-lg font-bold mb-4 hover:underline">
+                <a
+                  href="https://chromewebstore.google.com/detail/kogan-helper/mcponoabcngmejbmhimhmkhmkikhmphe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Kogan Helper →
+                </a>
+              </h3>
+              <p>
+                The <span className="font-bold">Kogan Helper</span> is a Chrome
+                extension designed to simplify mobile account management for
+                Kogan Mobile users in New Zealand. With a single click, it
+                provides instant access to current plan details, data usage, and
+                remaining balance, eliminating the need for manual navigation
+                through multiple pages. Built with a focus on efficiency and
+                user convenience, the extension enhances the overall experience
+                by offering a fast, seamless, and intuitive way to stay informed
+                about mobile usage.
+              </p>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section className="mb-24">
+        <h2 className="text-xl font-bold mb-8">Blog</h2>
+        <div className="">
+          <p className="mb-4">
+            I write about front-end development, technology, and personal
+            growth. Most posts are in Chinese, but I&apos;m gradually adding
+            more English content.
+          </p>
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://namelssman.js.org"
             target="_blank"
             rel="noopener noreferrer"
+            className="font-bold hover:underline"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+            Visit My Blog →
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+      <section className="mb-24">
+        <h2 className="text-xl font-bold mb-8">Contact</h2>
+        <ul className="flex justify-between">
+          <li>
+            <a href="">Email</a>
+          </li>
+          <li>
+            <a href="">GitHub</a>
+          </li>
+          <li>
+            <a href="">LinkedIn</a>
+          </li>
+        </ul>
+      </section>
+    </main>
   );
 }
