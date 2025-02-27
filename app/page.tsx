@@ -8,7 +8,7 @@ export default function Home() {
     github: "https://github.com/namelessman",
     linkedin: "https://www.linkedin.com/in/morrison-zhou-444919280",
   };
-  const blog = "https://namelssman.js.org";
+  const blog = "https://namelessman.js.org";
 
   return (
     <main className="py-8 px-8 lg:py-24 lg:px-64 lg:max-w-7xl mx-auto">
