@@ -1,8 +1,19 @@
+import Image from "next/image";
+import packageJson from "../package.json";
+
 export default function Home() {
+  const basePath = process.env.PAGES_BASE_PATH || `/${packageJson.name}`;
+  const contact = {
+    email: "zhoumq.good@gmail.com",
+    github: "https://github.com/namelessman",
+    linkedin: "https://www.linkedin.com/in/morrison-zhou-444919280",
+  };
+  const blog = "https://namelssman.js.org";
+
   return (
     <main className="py-8 px-8 lg:py-24 lg:px-64 lg:max-w-7xl mx-auto">
       <section className="w-full mb-24">
-        <h1 className="mb-2 text-4xl font-bold">
+        <h1 className="mb-4 text-4xl font-bold">
           Yo! This&apos;s namelessman.
         </h1>
         <p className="text-xl mb-8">
@@ -143,7 +154,7 @@ export default function Home() {
             more English content.
           </p>
           <a
-            href="https://namelssman.js.org"
+            href={blog}
             target="_blank"
             rel="noopener noreferrer"
             className="font-bold hover:underline"
@@ -156,13 +167,37 @@ export default function Home() {
         <h2 className="text-xl font-bold mb-8">Contact</h2>
         <ul className="flex justify-between">
           <li>
-            <a href="">Email</a>
+            <a href={`mailto:${contact.email}`}>
+              <Image
+                src={`${basePath}/mail.svg`}
+                className="invert"
+                alt="Email"
+                width={36}
+                height={36}
+              />
+            </a>
           </li>
           <li>
-            <a href="">GitHub</a>
+            <a href={contact.github}>
+              <Image
+                src={`${basePath}/github.svg`}
+                className="invert"
+                alt="GitHub"
+                width={36}
+                height={36}
+              />
+            </a>
           </li>
           <li>
-            <a href="">LinkedIn</a>
+            <a href={contact.linkedin}>
+              <Image
+                src={`${basePath}/linkedin.svg`}
+                className="invert"
+                alt="LinkedIn"
+                width={36}
+                height={36}
+              />
+            </a>
           </li>
         </ul>
       </section>
