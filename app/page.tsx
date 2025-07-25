@@ -54,6 +54,74 @@ export default function Home() {
           <li className="mb-8">
             <article>
               <h3 className="text-lg font-bold mb-4">
+                <a
+                  href="https://www.tryfavour.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Favour – NZ’s DIY Meal Kit app →
+                </a>
+              </h3>
+              <p>
+                The{" "}
+                <span className="font-bold">
+                  Favour – NZ’s DIY Meal Kit app
+                </span>{" "}
+                is a New Zealand–based mobile solution by FoodMe Ltd designed to
+                offer a fully customizable DIY meal‑kit experience. It provides
+                users with{" "}
+                <span className="font-bold">hundreds of recipes each week</span>{" "}
+                that they can swap, substitute, or filter by dietary needs,
+                budget, brand preference, or ingredients already in their
+                fridge. <br />
+                As a <span className="font-bold">Front‑End Engineer</span>, I
+                led React Native client development and drove multiple
+                performance and feature improvements:
+              </p>
+              <ul className="list-disc list-inside mt-2 space-y-1">
+                <li>
+                  Reduced app launch time from <strong>~16 s to ~2 s</strong> by
+                  optimizing resource loading and cold start workflows in RN.
+                </li>
+                <li>
+                  Integrated <strong>Customer.io</strong> as the messaging
+                  backend for targeted push notifications and email campaigns,
+                  boosting user engagement and retention.
+                </li>
+                <li>
+                  Built supporting <strong>Python backend services</strong> to
+                  feed Customer.io with personalized triggers and user event
+                  data.
+                </li>
+                <li>
+                  Configured and maintained separate{" "}
+                  <strong>
+                    development, staging, and production environments
+                  </strong>
+                  , streamlining CI/CD and testing.
+                </li>
+              </ul>
+              <p className="mt-2">
+                The app connects seamlessly to <strong>Countdown NZ</strong>,
+                automatically transferring selected ingredients into the
+                user&apos;s trolley for delivery or pickup—typically within
+                24 hours—while offering unlimited recipe customization and
+                budget awareness (e.g. filtering by per‑serving cost). The app
+                holds a <strong>4.8‑star rating</strong> on the App Store from
+                ~193 ratings, with user comments praising its ease of use,
+                grocery‑list automation, and time/money savings. Overall,
+                Favour’s platform empowers food planning, kitchen inventory
+                awareness, allergy and budget control, and streamlined grocery
+                automation. My contributions delivered a fast, reliable, and
+                maintainable front‑end architecture that supports personalized,
+                end‑to‑end meal planning for users across New Zealand.
+              </p>
+            </article>
+          </li>
+
+          <li className="mb-8">
+            <article>
+              <h3 className="text-lg font-bold mb-4">
                 ROC (Resource Operations and Control Platform)
               </h3>
               <p>
