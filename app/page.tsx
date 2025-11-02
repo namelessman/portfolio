@@ -1,8 +1,8 @@
 import Image from "next/image";
-import packageJson from "../package.json";
+// import packageJson from "../package.json";
 
 export default function Home() {
-  const basePath = process.env.PAGES_BASE_PATH || `/${packageJson.name}`;
+  const basePath = process.env.PAGES_BASE_PATH || "";
   const contact = {
     email: "zhoumq.good@gmail.com",
     github: "https://github.com/namelessman",
