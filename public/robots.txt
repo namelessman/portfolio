@@ -1,0 +1,11 @@
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Block unnecessary files or folders
+Disallow: /node_modules/
+Disallow: /scripts/
+Disallow: /temp/
+
+# Sitemap location
+Sitemap: https://namelessman.com/sitemap.xml
