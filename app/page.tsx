@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   const basePath = process.env.PAGES_BASE_PATH || "";
   const contact = {
-    email: "zhoumq.good@gmail.com",
+    email: "hi@namelessman.com",
     github: "https://github.com/namelessman",
     linkedin: "https://www.linkedin.com/in/morrison-zhou-444919280",
   };
