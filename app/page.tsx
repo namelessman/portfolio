@@ -53,7 +53,7 @@ export default function Home() {
         <ul>
           <li className="mb-8">
             <article>
-              <h3 className="text-lg font-bold mb-4">
+              <h3 className="text-lg font-bold mb-4 hover:underline">
                 <a
                   href="https://www.tryfavour.com/"
                   target="_blank"
@@ -155,6 +155,64 @@ export default function Home() {
                 providing a more efficient and automated approach to resource
                 operations.
               </p>
+            </article>
+          </li>
+          <li className="mb-8">
+            <article>
+              <h3 className="text-lg font-bold mb-4 hover:underline">
+                <a
+                  href="https://triply.co.nz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Triply – Ride Sharing Platform →
+                </a>
+              </h3>
+              <p>
+                The{" "}
+                <span className="font-bold">
+                  Triply – Ride Sharing Platform
+                </span>{" "}
+                is a carpooling product built for travelers and locals in New
+                Zealand. As{" "}
+                <span className="font-bold">
+                  Founder / Full-Stack Developer
+                </span>
+                , I designed and built the platform with{" "}
+                <span className="font-bold">
+                  Next.js, PostgreSQL, and Vercel
+                </span>
+                , covering product, backend, and deployment end-to-end.
+              </p>
+              <ul className="list-disc list-inside mt-2 space-y-1">
+                <li>
+                  Designed and built a carpooling platform targeting travelers
+                  and locals in New Zealand.
+                </li>
+                <li>
+                  Implemented user registration, trip posting, search, and
+                  matching features.
+                </li>
+                <li>
+                  Implemented email notifications for user actions and system
+                  alerts.
+                </li>
+                <li>
+                  Built a responsive web UI with a modern front-end framework
+                  and clean UX.
+                </li>
+                <li>
+                  Designed RESTful APIs and handled data modeling for trips and
+                  users.
+                </li>
+                <li>
+                  Deployed the platform with a custom domain and production
+                  configuration.
+                </li>
+                <li>
+                  Iterated features based on real user behavior and feedback.
+                </li>
+              </ul>
             </article>
           </li>
           <li className="mb-8">
