@@ -15,7 +15,7 @@ export default function ScrollEffects() {
     );
 
     let isAutoScrolling = false;
-    let autoScrollTimeout: ReturnType<typeof window.setTimeout> | null = null;
+    let autoScrollTimeout: number | null = null;
 
     const updateScroll = () => {
       root.style.setProperty(
