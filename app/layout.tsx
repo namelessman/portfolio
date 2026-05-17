@@ -1,28 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { EB_Garamond, Roboto_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const ebGaramond = EB_Garamond({
+  variable: "--font-eb-garamond",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const robotoMono = Roboto_Mono({
+  variable: "--font-roboto-mono",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Namelessman's Portfolio",
+  title: "namelessman | Developer Portfolio",
   description: "Code simplifies the world, liberates humanity — I create it.",
-  keywords: [
-    "namelessman",
-    "portfolio",
-    "front end",
-    "full stack",
-    "developer",
-  ],
+  keywords: ["portfolio", "front end", "full stack", "developer"],
 };
 
 export default function RootLayout({
@@ -31,9 +25,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${ebGaramond.variable} ${robotoMono.variable} antialiased bg-background text-foreground font-mono overflow-x-hidden`}
       >
         {children}
       </body>
