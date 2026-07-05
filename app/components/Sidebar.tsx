@@ -10,6 +10,7 @@ export default function Sidebar() {
         {[
           { label: "HOME", icon: "home", href: "#home" },
           { label: "PROJECTS", icon: "architecture", href: "#projects" },
+          { label: "FOR FUN", icon: "celebration", href: "#for-fun" },
           { label: "RESUME", icon: "history", href: "#resume" },
           { label: "CONTACT", icon: "mail", href: "#contact" },
         ].map((item) => (

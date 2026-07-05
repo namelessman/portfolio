@@ -34,6 +34,75 @@ export default function Projects() {
     },
   ];
 
+  const forFunProjects = [
+    {
+      id: "05",
+      title: "Kea Motel - Hospitality Website",
+      link: "https://keamotel.co.nz",
+      tech: ["WEB DEVELOPMENT", "HOSTING", "DOMAIN MGMT"],
+      description:
+        "Engaged directly with the motel owner to scope requirements, align on design direction, and iterate on content. Designed, deployed, and maintain the site end-to-end as the single point of contact.",
+    },
+    {
+      id: "06",
+      title: "SubShield - Subtitle Blocker",
+      link: "https://chromewebstore.google.com/detail/subshield-%E2%80%93-subtitle-bloc/llbeeoipfcniidgpknggeckkcobfnhmn",
+      tech: ["CHROME EXTENSION", "JAVASCRIPT", "CSS"],
+      description:
+        "A lightweight browser extension that blocks subtitles on video platforms to help language learners improve listening comprehension. Features customizable blackout boxes and keyboard shortcuts.",
+    },
+    {
+      id: "07",
+      title: "Kogan Helper - Mobile Usage Tracker",
+      link: "https://chromewebstore.google.com/detail/kogan-helper/mcponoabcngmejbmhimhmkhmkikhmphe",
+      tech: ["CHROME EXTENSION", "JAVASCRIPT", "API"],
+      description:
+        "Fetches and displays Kogan Mobile usage summary with one click from any website. Includes push notifications for low data alerts. Serves 500+ users on the Chrome Web Store.",
+    },
+  ];
+
+  const renderProject = (
+    project: (typeof projects)[0] | (typeof forFunProjects)[0],
+    index: number
+  ) => (
+    <div
+      key={project.id}
+      data-reveal
+      style={{ transitionDelay: `${index * 90}ms` }}
+      className="border-b border-outline-variant pb-12"
+    >
+      <span className="font-label-caps text-primary">
+        {project.id} / {project.title.split(" ")[0].toUpperCase()}
+      </span>
+      <h3 className="font-serif text-headline-md mt-4 mb-6">
+        {project.title}
+      </h3>
+      <p className="text-secondary max-w-xl mb-6">
+        {project.description}
+      </p>
+      <div className="flex flex-wrap gap-2">
+        {project.tech.map((t) => (
+          <span
+            key={t}
+            className="px-3 py-1 bg-surface border border-outline-variant font-label-caps text-xs"
+          >
+            {t}
+          </span>
+        ))}
+      </div>
+      {project.link && (
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-4 text-primary hover:text-primary-container transition-colors font-label-caps"
+        >
+          → VIEW PROJECT
+        </a>
+      )}
+    </div>
+  );
+
   return (
     <section
       id="projects"
@@ -46,44 +115,21 @@ export default function Projects() {
           </h2>
         </div>
         <div className="col-span-12 md:col-span-7 md:col-start-6 space-y-24">
-          {projects.map((project, index) => (
-            <div
-              key={project.id}
-              data-reveal
-              style={{ transitionDelay: `${index * 90}ms` }}
-              className="border-b border-outline-variant pb-12"
-            >
-              <span className="font-label-caps text-primary">
-                {project.id} / {project.title.split(" ")[0].toUpperCase()}
-              </span>
-              <h3 className="font-serif text-headline-md mt-4 mb-6">
-                {project.title}
-              </h3>
-              <p className="text-secondary max-w-xl mb-6">
-                {project.description}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {project.tech.map((t) => (
-                  <span
-                    key={t}
-                    className="px-3 py-1 bg-surface border border-outline-variant font-label-caps text-xs"
-                  >
-                    {t}
-                  </span>
-                ))}
-              </div>
-              {project.link && (
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block mt-4 text-primary hover:text-primary-container transition-colors font-label-caps"
-                >
-                  → VIEW PROJECT
-                </a>
-              )}
-            </div>
-          ))}
+          {projects.map((project, index) => renderProject(project, index))}
+        </div>
+      </div>
+
+      {/* For Fun Section */}
+      <div id="for-fun" className="grid grid-cols-12 gap-gutter mt-24">
+        <div data-reveal className="col-span-12 md:col-span-4 mb-12 md:mb-0">
+          <h2 className="font-serif text-headline-lg uppercase sticky top-32">
+            FOR <br /> <span className="text-primary italic">FUN</span>
+          </h2>
+        </div>
+        <div className="col-span-12 md:col-span-7 md:col-start-6 space-y-24">
+          {forFunProjects.map((project, index) =>
+            renderProject(project, index)
+          )}
         </div>
       </div>
     </section>
