@@ -25,8 +25,8 @@ export default {
           { lineHeight: "110px", letterSpacing: "-0.04em", fontWeight: "700" },
         ],
         "headline-lg": [
-          "64px",
-          { lineHeight: "72px", letterSpacing: "-0.02em", fontWeight: "600" },
+          "clamp(36px, 12vw, 64px)",
+          { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "600" },
         ],
         "headline-lg-mobile": [
           "40px",

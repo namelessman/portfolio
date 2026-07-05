@@ -29,10 +29,10 @@ export default function Hero() {
         <h1
           data-reveal
           style={{ transitionDelay: "90ms" }}
-          className="font-serif text-headline-lg-mobile md:text-display-2xl uppercase leading-[0.9] relative"
+          className="font-serif text-[clamp(28px,8vw,40px)] md:text-display-2xl uppercase leading-[0.9] relative"
         >
           <span className="relative z-20 block mb-3 md:mb-0">namelessman</span>
-          <span className="relative z-30 inline-block mt-2 md:-mt-6 bg-primary text-surface px-5 py-2 md:px-8 md:py-3 shadow-[0_0_0_2px_var(--color-primary)]">
+          <span className="relative z-30 inline-block mt-2 md:-mt-6 bg-primary text-surface px-3 py-1.5 md:px-8 md:py-3 shadow-[0_0_0_2px_var(--color-primary)] text-[clamp(14px,3.5vw,20px)] md:text-[inherit]">
             Software Engineer
           </span>
         </h1>

@@ -3,7 +3,12 @@ import Link from "next/link";
 export default function Sidebar() {
   return (
     <aside className="fixed left-0 top-0 h-full w-14 sm:w-20 md:w-32 z-50 border-r-2 border-outline-variant bg-surface flex flex-col items-center justify-between py-8 md:py-12">
-      <div className="font-serif text-[10px] sm:text-[11px] md:text-[13px] uppercase tracking-[0.28em] text-primary select-none text-center leading-none px-1 sm:px-2">
+      <div
+        className="font-serif text-[10px] sm:text-[11px] md:text-[13px] uppercase tracking-[0.28em] text-primary select-none leading-none overflow-visible whitespace-nowrap"
+        style={{
+          writingMode: "vertical-rl",
+        }}
+      >
         namelessman
       </div>
       <nav className="flex flex-col gap-8 sm:gap-12 md:gap-24 items-center">
