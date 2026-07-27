@@ -15,7 +15,7 @@
   --font-jetbrains-mono: 'JetBrains Mono', monospace;
 }
 
-html {
+[data-scroll-container] {
   scroll-behavior: smooth;
 }
 
@@ -66,8 +66,9 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
+  [data-scroll-container] {
     scroll-behavior: auto;
+    scroll-snap-type: none;
   }
 
   [data-reveal] {

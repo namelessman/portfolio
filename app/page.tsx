@@ -13,7 +13,7 @@ export default function Home() {
       <TopBar />
       <ScrollEffects />
       <main
-        className="ml-14 sm:ml-20 md:ml-32 h-screen flex flex-col w-[calc(100vw-3.5rem)] sm:w-[calc(100vw-5rem)] md:w-[calc(100vw-8rem)] overflow-y-auto overflow-x-hidden snap-y snap-mandatory"
+        className="ml-14 sm:ml-20 md:ml-32 h-screen flex flex-col w-[calc(100vw-3.5rem)] sm:w-[calc(100vw-5rem)] md:w-[calc(100vw-8rem)] overflow-y-auto overflow-x-hidden snap-y snap-proximity"
         data-scroll-container
       >
         <Hero />
