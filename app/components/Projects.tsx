@@ -45,11 +45,11 @@ export default function Projects() {
     },
     {
       id: "06",
-      title: "SubShield - Subtitle Blocker",
-      link: "https://chromewebstore.google.com/detail/subshield-%E2%80%93-subtitle-bloc/llbeeoipfcniidgpknggeckkcobfnhmn",
-      tech: ["CHROME EXTENSION", "JAVASCRIPT", "CSS"],
+      title: "Yin's Portfolio - Creative Portfolio",
+      link: "https://yindoes3d.com/",
+      tech: ["WEB DESIGN", "NEXT.JS", "MARKDOWN", "CLOUDFLARE R2"],
       description:
-        "A lightweight browser extension that blocks subtitles on video platforms to help language learners improve listening comprehension. Features customizable blackout boxes and keyboard shortcuts.",
+        "Designed and developed a bespoke portfolio site and Markdown-powered blog system, with Cloudflare R2 hosting blog images and GitHub-based publishing for fast, portable content management. Partnered directly with the client throughout discovery, requirements planning, feedback cycles, and delivery.",
     },
     {
       id: "07",
@@ -58,6 +58,14 @@ export default function Projects() {
       tech: ["CHROME EXTENSION", "JAVASCRIPT", "API"],
       description:
         "Fetches and displays Kogan Mobile usage summary with one click from any website. Includes push notifications for low data alerts. Serves 500+ users on the Chrome Web Store.",
+    },
+    {
+      id: "08",
+      title: "SubShield - Subtitle Blocker",
+      link: "https://chromewebstore.google.com/detail/subshield-%E2%80%93-subtitle-bloc/llbeeoipfcniidgpknggeckkcobfnhmn",
+      tech: ["CHROME EXTENSION", "JAVASCRIPT", "CSS"],
+      description:
+        "A lightweight browser extension that blocks subtitles on video platforms to help language learners improve listening comprehension. Features customizable blackout boxes and keyboard shortcuts.",
     },
   ];
 
